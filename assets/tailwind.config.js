@@ -18,6 +18,36 @@ module.exports = {
       }
     },
   },
+  safelist: [
+    {
+      pattern: /bg-+/,
+      variants: ["focus", "hover", "group-hover", "active"],
+    },
+    {
+      pattern: /text-+/,
+      variants: ["focus", "hover", "group-hover", "active"],
+    },
+    {
+      pattern: /from-+/,
+      variants: ["focus", "hover", "group-hover", "active"],
+    },
+    {
+      pattern: /to-+/,
+      variants: ["focus", "hover", "group-hover", "active"],
+    },
+    {
+      pattern: /inset-+/,
+      variants: ["focus", "hover", "group-hover", "active"],
+    },
+    {
+      pattern: /opacity-+/,
+      variants: ["focus", "hover", "group-hover", "active"],
+    },
+    {
+      pattern: /transition-+/,
+      variants: ["focus", "hover", "group-hover", "active"],
+    },
+  ],
   plugins: [
     require("@tailwindcss/forms"),
     // Allows prefixing tailwind classes with LiveView classes to add rules

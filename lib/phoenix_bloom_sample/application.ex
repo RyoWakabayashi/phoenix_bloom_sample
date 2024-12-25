@@ -9,7 +9,8 @@ defmodule PhoenixBloomSample.Application do
   def start(_type, _args) do
     children = [
       PhoenixBloomSampleWeb.Telemetry,
-      {DNSCluster, query: Application.get_env(:phoenix_bloom_sample, :dns_cluster_query) || :ignore},
+      {DNSCluster,
+       query: Application.get_env(:phoenix_bloom_sample, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: PhoenixBloomSample.PubSub},
       # Start the Finch HTTP client for sending emails
       {Finch, name: PhoenixBloomSample.Finch},

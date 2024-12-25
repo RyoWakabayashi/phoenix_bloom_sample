@@ -89,6 +89,10 @@ defmodule PhoenixBloomSampleWeb do
       import Phoenix.HTML
       # Core UI components
       import PhoenixBloomSampleWeb.CoreComponents
+      import PhoenixBloomSampleWeb.Components.Avatar
+      import PhoenixBloomSampleWeb.Components.CodeSnippet
+      import PhoenixBloomSampleWeb.Components.GradientText
+      import PhoenixBloomSampleWeb.Components.GlowButton
 
       # Shortcut for generating JS commands
       alias Phoenix.LiveView.JS

@@ -52,9 +52,31 @@
         v{Application.spec(:phoenix, :vsn)}
       </small>
     </h1>
-    <p class="text-[2rem] mt-4 font-semibold leading-10 tracking-tighter text-zinc-900 text-balance">
+    <div class="flex items-center gap-4 mt-4">
+      <.avatar name="Jessica&rotate=30" style="adventurer" />
+      <.avatar
+        name="Me"
+        img_src="https://api.dicebear.com/9.x/adventurer/svg?seed=Oliver&rotate=20&eyebrows=variant02&eyes=variant01&hairColor=85c2c6&mouth=variant24"
+      />
+    </div>
+    <.code_snippet
+      class="mt-4"
+      delimiter=">"
+      text_color="emerald-800"
+      background_color="green-200"
+    >
+      mix bloom.install code_snippet
+    </.code_snippet>
+    <.gradient_text
+      class="text-[2rem] mt-4 font-semibold leading-10 tracking-tighter text-balance"
+      from_color="pink-500"
+      to_color="cyan-500"
+    >
       Peace of mind from prototype to production.
-    </p>
+    </.gradient_text>
+    <.glow_button class="mt-4" from_color="emerald-600" to_color="indigo-600">
+      Hello, Bloom!
+    </.glow_button>
     <p class="mt-4 text-base leading-7 text-zinc-600">
       Build rich, interactive web applications quickly, with less code and fewer moving parts. Join our growing community of developers using Phoenix to craft APIs, HTML5 apps and more, for fun or at scale.
     </p>
